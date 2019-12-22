@@ -18,11 +18,11 @@
                 <span>Hous</span>
             </div>
             <div>
-                <span id="minutes">00</span>
+                <span id="seconds">00</span>
                 <span>Minutes</span>
             </div>
             <div>
-                <span id="seconds">00</span>
+                <span id="minutes">00</span>
                 <span>Seconds</span>
             </div>
         </div>
@@ -33,9 +33,9 @@
             var minutes = document.getElementById('minutes');
             var seconds = document.getElementById('seconds');
 
-            var h = new date().getHours();
-            var m = new date().getMinutes();
-            var s = new date().getSeconds();
+            var h = new Date().getHours();
+            var m = new Date().getMinutes();
+            var s = new Date().getSeconds();
 
             hours.innerHTML = h;
             minutes.innerHTML = s;
@@ -43,6 +43,7 @@
 
         }
         var interval = setInterval(clock, 1000);
+        console.log(Date())
 
 
     </script>
